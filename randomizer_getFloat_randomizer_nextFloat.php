@@ -1,13 +1,13 @@
 <?php
 
-// Generating a random float between 0 and 1
+// Generiere eine Zufallszahl zwischen 0 und 1
 echo (new \Random\Randomizer())->nextFloat();
 
-// Generating a random float between 10 and 20, inclusive
+// Generiere eine Zufallszahl zwischen 10 und 20, inklusive 10 und 20
 echo (new \Random\Randomizer())->getFloat(10, 20);
 
-// Generating a random float between 0 and 100, exclusive
+// Generiere eine Zufallszahl zwischen 0 und 100, exklusive 100
 echo (new \Random\Randomizer())->getFloat(0, 100, \Random\IntervalBoundary::OpenClosed);
 
-// Generating a random float between -10 and 10
+// Generiere eine Zufallszahl zwischen -10 und 10, inklusive -10 und 10
 echo (new \Random\Randomizer())->getFloat(-10, 10, \Random\IntervalBoundary::OpenOpen);
